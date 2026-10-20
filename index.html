@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Empresa Digital</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22f%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%238B5CF6%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2322D3EE%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22url%28%23f%29%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%230B1020%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M14%2030h36%22/%3E%3Cpath%20d%3D%22M14%2030l4-10h28l4%2010%22/%3E%3Cpath%20d%3D%22M14%2030c0%204%203%206%206%206s6-2%206-6c0%204%203%206%206%206s6-2%206-6c0%204%203%206%206%206s6-2%206-6%22/%3E%3Cpath%20d%3D%22M18%2036v14h28V36%22/%3E%3Cpath%20d%3D%22M28%2050v-8h8v8%22/%3E%3C/g%3E%3Cpath%20d%3D%22M24%2012l8-4%208%204%22%20stroke%3D%22%230B1020%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22/%3E%3Cg%20fill%3D%22%23FACC15%22%20stroke%3D%22%230B1020%22%20stroke-width%3D%222%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2212%22%20r%3D%223%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%228%22%20r%3D%223%22/%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2212%22%20r%3D%223%22/%3E%3C/g%3E%3C/svg%3E">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -409,6 +410,172 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
 .shopphoto{min-height:320px;height:100%}
 .shopphoto #shopTag{position:absolute;bottom:14px;left:14px;z-index:2;background:var(--grad);color:var(--ink);font-weight:800;font-size:.85rem;padding:8px 14px;border-radius:999px}
 .nfphoto{min-height:200px}
+
+/* ---------- Refuerzo (oct. 2026) ---------- */
+.ask{flex-wrap:wrap}
+.ask .askq{flex:1;min-width:0}
+.askbtn{background:none;border:0;padding:0;margin-top:6px;font:inherit;font-size:.88rem;font-weight:800;color:var(--yellow);cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.askbtn .i{width:16px;height:16px;margin:0;transition:transform .2s}
+.askbtn[aria-expanded="true"] .i{transform:rotate(90deg)}
+.askans{margin-top:8px;color:var(--muted);font-size:.95rem}
+.goalhd{margin-top:48px;margin-bottom:12px;font-size:1.05rem;color:var(--fg);display:flex;align-items:center;gap:8px}
+.goalhd .i{color:var(--cyan)}
+.goals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:860px){.goals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.goals{grid-template-columns:minmax(0,1fr)}}
+.goals a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:600;line-height:1.35;padding:12px 14px;border-radius:16px;background:rgba(30,41,59,.6);border:1px solid var(--line);min-width:0}
+.goals a:hover{color:var(--fg);border-color:var(--violet)}
+.goals a span{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(139,92,246,.18);color:#C4B5FD;flex:none}
+.goals a span .i{width:20px;height:20px}
+.goalgen{margin-top:10px;color:var(--soft);font-size:.82rem;max-width:90ch}
+.func{align-items:center}
+@media (max-width:520px){.concl{grid-template-columns:minmax(0,1fr)}}
+.func .ico{flex:none}
+.sigphoto .credit{top:10px;bottom:auto}
+.func div{min-width:0}
+.func small{display:block;color:var(--muted);font-size:.82rem;line-height:1.35;margin-top:2px}
+.thesis{display:flex;gap:16px;align-items:flex-start;background:linear-gradient(120deg,rgba(139,92,246,.18),rgba(34,211,238,.10));border:1px solid rgba(139,92,246,.45);border-radius:var(--r);padding:22px;margin-bottom:20px}
+.thesis .i{color:#C4B5FD;width:30px;height:30px}
+.thesis p{font-size:clamp(1.05rem,2.4vw,1.3rem);font-weight:700;line-height:1.4}
+.thesis small{display:block;color:var(--soft);font-size:.82rem;font-weight:600;margin-top:6px}
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+@media (max-width:760px){.notes{grid-template-columns:minmax(0,1fr)}}
+.note{display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
+.note .ico{width:46px;height:46px;border-radius:14px;flex:none}
+.note .ico .i{width:22px;height:22px}
+.note.co .ico{background:rgba(250,204,21,.16);color:var(--yellow)}
+.note.li .ico{background:rgba(148,163,184,.18);color:var(--muted)}
+.note b{display:block;margin-bottom:4px}
+.note p{color:var(--muted);font-size:.92rem}
+.note .big{display:block;font-size:1.9rem;font-weight:800;color:var(--yellow);line-height:1.1;margin:2px 0 4px}
+.rfil{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 12px}
+.rfil button{font:inherit;font-size:.82rem;font-weight:700;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--muted);cursor:pointer}
+.rfil button[aria-pressed="true"]{background:var(--grad);color:var(--ink);border-color:transparent}
+.rtag{display:block;width:fit-content;margin-bottom:4px;margin-left:-26px;text-indent:0;font-size:.68rem;font-weight:800;letter-spacing:.02em;padding:2px 8px;border-radius:999px;background:var(--panel2);color:var(--soft);margin-right:8px;vertical-align:1px}
+
+/* ---------- Dinámico (oct. 2026) ---------- */
+.askans{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch;animation:pop .35s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(-6px)}}
+.aopt{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.aopt .i{width:22px;height:22px;margin:0}
+.aopt b{font-size:.9rem;color:var(--fg)}
+.aopt small{font-size:.8rem;color:var(--muted);line-height:1.3}
+.aopt.no{border-color:rgba(251,146,60,.5)} .aopt.no .i{color:var(--orange)}
+.aopt.si{border-color:rgba(34,211,238,.5)} .aopt.si .i{color:var(--cyan)}
+.askans .vs{align-self:center;font-weight:800;color:var(--soft);font-size:.8rem}
+.askans .src{grid-column:1/-1;margin:0;font-size:.75rem}
+.goals{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media (max-width:860px){.goals{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:420px){.goals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.goals a{position:relative;flex-direction:column;text-align:center;justify-content:center;gap:8px;font-size:.82rem;font-weight:700;padding:14px 8px}
+.goals a span{width:44px;height:44px;border-radius:14px}
+.goals a .ok{position:absolute;top:8px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--panel2);color:transparent;display:grid;place-items:center;transition:background .3s,color .3s}
+.goals a .ok .i{width:13px;height:13px;stroke-width:3}
+.goals a.seen{border-color:rgba(34,197,94,.55)}
+.goals a.seen .ok{background:var(--ok);color:var(--ink)}
+.goalbar{display:flex;align-items:center;gap:12px;margin-top:12px;color:var(--soft);font-size:.82rem}
+.goalbar .track{flex:1;height:6px;border-radius:99px;background:var(--panel2);overflow:hidden}
+.goalbar .track i{display:block;height:100%;width:0;background:var(--grad);transition:width .5s}
+.func{cursor:pointer;border:1px solid transparent;font:inherit;color:inherit;text-align:left;width:100%;transition:border-color .2s,background .2s}
+.func[aria-pressed="true"]{border-color:var(--violet);background:rgba(139,92,246,.16)}
+.func .ico{flex:none}
+.fcap{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;display:flex;gap:12px;align-items:center;background:rgba(15,23,42,.88);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.fcap .ico{width:42px;height:42px;border-radius:12px;flex:none}
+.fcap .ico .i{width:20px;height:20px}
+.fcap b{display:block;font-size:.95rem}
+.fcap span{display:block;color:var(--muted);font-size:.85rem;line-height:1.35}
+.fcap.swap{animation:pop .35s ease-out}
+.law{position:relative;min-height:260px}
+.law .lawin{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;background:rgba(15,23,42,.9);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:14px}
+.law .lawin b{display:flex;align-items:center;gap:8px;font-size:.95rem}
+.law .lawin b .i{color:var(--yellow);width:20px;height:20px}
+.split2{display:flex;height:34px;border-radius:10px;overflow:hidden;margin:10px 0 6px;background:var(--panel2)}
+.split2 i{display:flex;align-items:center;padding:0 10px;font-style:normal;font-weight:800;font-size:.82rem;white-space:nowrap;width:0;transition:width 1.1s ease-out}
+.split2 .p{background:var(--yellow);color:var(--ink)}
+.split2 .w{background:var(--violet);color:#fff;justify-content:flex-end}
+.law.go .split2 .p{width:60%} .law.go .split2 .w{width:40%}
+.law small{display:block;color:var(--soft);font-size:.75rem}
+.lims{display:flex;flex-direction:column;gap:10px;justify-content:center}
+.lim{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px}
+.lim .ico{width:42px;height:42px;border-radius:12px;flex:none;background:rgba(148,163,184,.18);color:var(--muted)}
+.lim .ico .i{width:20px;height:20px}
+.lim b{font-size:.92rem}
+.lims .btn{align-self:flex-start}
+.limhd{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+
+/* ---------- Logo ---------- */
+.brand .logo{width:38px;height:38px;flex:none;filter:drop-shadow(0 4px 10px rgba(139,92,246,.35))}
+.brand .wm{display:flex;flex-direction:column;line-height:1.1}
+.brand .wm span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .wm small{font-size:.62rem;font-weight:700;letter-spacing:.06em;color:var(--soft);text-transform:uppercase}
+@media (max-width:400px){.brand .wm small{display:none}.brand .logo{width:32px;height:32px}}
+footer .flogo{display:flex;align-items:center;justify-content:center;gap:10px;text-align:left}
+footer .flogo svg{width:28px;height:28px;flex:none}
+
+/* ---------- Interactivo (oct. 2026) ---------- */
+.ba{position:relative;margin:28px 0 0;border-radius:24px;overflow:hidden;aspect-ratio:12/7;background:linear-gradient(135deg,#2a1f5c,#123047);user-select:none;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .batop{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.ba .baline{position:absolute;top:0;bottom:0;left:var(--p,50%);width:3px;background:#fff;transform:translateX(-50%);pointer-events:none;z-index:3}
+.ba .knob{position:absolute;top:50%;left:var(--p,50%);transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.4);pointer-events:none;z-index:4;font-weight:800}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;margin:0}
+.ba .lb{position:absolute;bottom:14px;z-index:2;background:rgba(15,23,42,.85);backdrop-filter:blur(6px);color:var(--fg);font-weight:800;font-size:.82rem;padding:7px 12px;border-radius:999px;border:1px solid var(--line);max-width:44%}
+.ba .lb.l{left:14px}.ba .lb.r{right:14px;text-align:right}
+.ba .lb small{display:block;font-weight:600;color:var(--muted);font-size:.72rem}
+.ba .credit{z-index:6}
+.bahint{display:flex;align-items:center;gap:8px;color:var(--soft);font-size:.85rem;margin-top:10px}
+.bahint .i{width:18px;height:18px;color:var(--cyan)}
+.mviz{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.mchips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.mchips button{flex:none;display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:.85rem;font-weight:700;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;white-space:nowrap}
+.mchips button .i{width:18px;height:18px}
+.mchips button[aria-pressed="true"]{background:var(--grad);color:var(--ink);border-color:transparent}
+.mstage{position:relative;border-radius:24px;overflow:hidden;min-height:380px;background:linear-gradient(135deg,#2a1f5c,#123047)}
+.mstage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.mstage::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,23,42,.92) 0%,rgba(15,23,42,.7) 45%,rgba(15,23,42,.1) 100%);pointer-events:none}
+@media (max-width:700px){.mstage::after{background:linear-gradient(180deg,rgba(15,23,42,.1) 0%,rgba(15,23,42,.92) 55%)}.mstage{min-height:460px}}
+.mcard{position:absolute;z-index:2;left:24px;top:24px;bottom:24px;width:min(420px,calc(100% - 48px));display:flex;flex-direction:column;justify-content:center;gap:10px}
+@media (max-width:700px){.mcard{top:auto;left:16px;right:16px;bottom:16px;width:auto}}
+.mcard .ico{width:52px;height:52px;border-radius:16px}
+.mcard h3{font-size:1.5rem}
+.mcard .tag{color:var(--cyan);font-weight:800;font-size:.9rem}
+.mcard p{color:var(--muted);font-size:.95rem}
+.mcard .ex{background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.35);border-radius:12px;padding:8px 12px;font-size:.88rem;color:var(--fg)}
+.mnav{position:absolute;z-index:3;right:16px;top:16px;display:flex;gap:8px}
+.mnav button{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:rgba(15,23,42,.8);color:var(--fg);display:grid;place-items:center;cursor:pointer}
+.mnav button .i{width:20px;height:20px}
+.mnav .prev .i{transform:rotate(180deg)}
+.mcount{position:absolute;z-index:3;right:20px;bottom:16px;font-size:.8rem;font-weight:800;color:var(--soft)}
+@media (max-width:700px){.mcount{top:26px;bottom:auto;left:20px;right:auto}}
+.mstage .credit{z-index:3;top:auto;bottom:40px;right:20px}
+@media (max-width:700px){.mstage .credit{top:70px;bottom:auto;right:16px}}
+.hs{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/10;margin-top:40px;background:linear-gradient(135deg,#2a1f5c,#123047)}
+.hs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hs .pin{position:absolute;z-index:3;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:6px;border:2px solid #fff;background:var(--violet);color:#fff;font:inherit;font-weight:800;font-size:.85rem;padding:7px 12px 7px 8px;border-radius:999px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.hs .pin .dot2{width:12px;height:12px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 0 rgba(250,204,21,.7);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 12px rgba(250,204,21,0)}100%{box-shadow:0 0 0 0 rgba(250,204,21,0)}}
+.hs .pin[aria-expanded="true"]{background:var(--yellow);color:var(--ink)}
+.hs .pop,#hsPop .pop{position:relative;margin-top:12px;background:rgba(15,23,42,.94);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;padding:16px;animation:pop .3s ease-out}
+.hs .pop b{display:block;font-size:1.05rem}
+.hs .pop .tag{color:var(--cyan);font-weight:800;font-size:.85rem}
+.hs .pop p{color:var(--muted);font-size:.9rem;margin-top:6px}
+.hs .pop .ex{margin-top:8px;font-size:.85rem;color:var(--fg);background:rgba(250,204,21,.12);border-radius:10px;padding:7px 10px}
+.hs .pop .x2{position:absolute;top:10px;right:10px;background:none;border:0;color:var(--soft);cursor:pointer}
+.hs .credit{z-index:5}
+#hsPop .pop{background:var(--panel);border:1px solid var(--violet);border-radius:18px;padding:16px 44px 16px 16px;animation:pop .3s ease-out}
+#hsPop .pop b{display:block;font-size:1.05rem}#hsPop .pop .tag{color:var(--cyan);font-weight:800;font-size:.85rem}#hsPop .pop p{color:var(--muted);font-size:.92rem;margin-top:6px}#hsPop .pop .x2{position:absolute;top:12px;right:12px;background:none;border:0;color:var(--soft);cursor:pointer}
+@media (max-width:600px){.hs .pin{font-size:.75rem;padding:5px 9px 5px 6px}}
+.hshint{display:flex;align-items:center;gap:8px;color:var(--soft);font-size:.85rem;margin-top:10px}
+.hshint .i{width:18px;height:18px;color:var(--cyan)}
+.scale{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:24px;margin-top:24px}
+@media (max-width:860px){.scale{grid-template-columns:minmax(0,1fr)}}
+.scale .big{font-size:2rem;font-weight:800;color:var(--cyan)}
+.sbars{display:grid;gap:14px}
+.sbar b{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:6px}
+.sbar b span{color:var(--soft);font-weight:700}
+.sbar .tr{height:26px;border-radius:8px;background:var(--panel2);overflow:hidden}
+.sbar .tr i{display:block;height:100%;border-radius:8px;transition:width .4s}
+.sbar.t .tr i{background:var(--orange)} .sbar.d .tr i{background:var(--grad)}
 </style>
 
 </head>
@@ -477,7 +644,7 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
 
 <header class="top">
   <div class="wrap bar">
-    <a class="brand" href="#inicio"><span class="dot"><svg class="i"><use href="#i-network"/></svg></span>Empresa Digital</a>
+    <a class="brand" href="#inicio"><svg class="logo" aria-hidden="true" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lgH" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lgH)"/><g fill="none" stroke="#0B1020" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M14 30h36"/><path d="M14 30l4-10h28l4 10"/><path d="M14 30c0 4 3 6 6 6s6-2 6-6c0 4 3 6 6 6s6-2 6-6c0 4 3 6 6 6s6-2 6-6"/><path d="M18 36v14h28V36"/><path d="M28 50v-8h8v8"/></g><path d="M24 12l8-4 8 4" stroke="#0B1020" stroke-width="2.5" fill="none"/><g fill="#FACC15" stroke="#0B1020" stroke-width="2"><circle cx="24" cy="12" r="3"/><circle cx="32" cy="8" r="3"/><circle cx="40" cy="12" r="3"/></g></svg><span class="wm"><b>Empresa <span>Digital</span></b><small>y nuevos modelos de negocio</small></span></a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav"><svg class="i"><use href="#i-menu"/></svg>Menú</button>
     <nav class="nav" id="nav" aria-label="Menú principal">
       <a href="#inicio">Inicio</a><a href="#empresa">Empresa digital</a><a href="#modelo">Modelo de negocio</a><a href="#sig">SIG</a><a href="#transformacion">Transformación</a><a href="#modelos">Modelos</a><a href="#valor">Valor</a><a href="#ventajas">Ventajas y riesgos</a><a href="#casos">Casos</a><a href="#simulador">Simulador</a><a href="#quiz">Quiz</a><a href="#conclusiones">Conclusiones</a><a href="#referencias">Referencias</a><a href="#creditos">Créditos</a>
@@ -496,20 +663,13 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
         <span class="eyebrow"><svg class="i"><use href="#i-book"/></svg>Sistemas de Información Gerencial</span>
         <h1>Empresa digital y <span>nuevos modelos de negocio</span></h1>
         <p class="sub">Cómo los datos y los sistemas de información cambian la forma en que las empresas crean, entregan y capturan valor.</p>
-        <div class="ask"><svg class="i"><use href="#i-bulb"/></svg><p><b>¿Basta con usar tecnología para ser una empresa digital?</b></p></div>
+        <div class="ask"><svg class="i"><use href="#i-bulb"/></svg><div class="askq"><p><b>¿Basta con usar tecnología para ser una empresa digital?</b></p><button class="askbtn" type="button" id="askBtn" aria-expanded="false" aria-controls="askAns">Ver respuesta <svg class="i"><use href="#i-chevron"/></svg></button><div class="askans" id="askAns" hidden><div class="aopt no"><svg class="i"><use href="#i-card"/></svg><b>Digitalizar</b><small>La misma tienda, ahora con pago en línea.</small></div><span class="vs">≠</span><div class="aopt si"><svg class="i"><use href="#i-refresh"/></svg><b>Transformar</b><small>Cambia cómo crea y cobra el valor.</small></div><p class="src">Van Alstyne y Parker (2021)</p></div></div></div>
         <div class="ctas"><a class="btn" href="#empresa">Comenzar <svg class="i"><use href="#i-arrow"/></svg></a><a class="btn alt" href="#quiz">Ir al quiz</a></div>
         <p class="who">Vanessa Correa Delgado · Lizeth Paola Gómez Ramírez<br>Docente: Javier José Niño · Universidad Piloto de Colombia · 2026</p>
       </div>
       <div class="heroimg"><figure class="photo"><img src="https://images.unsplash.com/photo-1727407209320-1fa6ae60ee05?auto=format&fit=crop&w=1000&q=75" alt="Mujer con una tableta y bolsas de compras" onerror="this.style.visibility='hidden'"><a class="credit" href="https://unsplash.com/photos/a-woman-holding-a-tablet-computer-and-shopping-bags-zg__oh_xu9g" target="_blank" rel="noopener">Foto: Unsplash</a></figure><span class="float a"><svg class="i"><use href="#i-database"/></svg>Datos</span><span class="float b"><svg class="i"><use href="#i-phone"/></svg>Compra en línea</span><span class="float c"><svg class="i"><use href="#i-file"/></svg>ERP · CRM · SCM</span><span class="float d"><svg class="i"><use href="#i-check"/></svg>Pedido confirmado</span></div>
     </div>
-    <nav class="route" aria-label="Ruta del recorrido">
-      <a href="#empresa"><span><svg class="i"><use href="#i-globe"/></svg></span>Conceptos</a>
-      <a href="#sig"><span><svg class="i"><use href="#i-database"/></svg></span>SIG</a>
-      <a href="#modelos"><span><svg class="i"><use href="#i-grid"/></svg></span>7 modelos</a>
-      <a href="#valor"><span><svg class="i"><use href="#i-network"/></svg></span>Valor</a>
-      <a href="#casos"><span><svg class="i"><use href="#i-chart"/></svg></span>3 casos</a>
-      <a href="#simulador"><span><svg class="i"><use href="#i-hand"/></svg></span>Practica</a>
-    </nav>
+    <h2 class="goalhd"><svg class="i"><use href="#i-target"/></svg>Al terminar podrás</h2><nav class="goals" id="goals" aria-label="Objetivos de aprendizaje"><a href="#empresa" data-g="empresa" title="Distinguir la empresa digital de la tradicional"><span><svg class="i"><use href="#i-globe"/></svg></span>Empresa digital<em class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></em><b class="sr">: Distinguir la empresa digital de la tradicional</b></a><a href="#modelo" data-g="modelo" title="Separar modelo de negocio y canal, y ubicar ERP, CRM y SCM"><span><svg class="i"><use href="#i-database"/></svg></span>Modelo y SIG<em class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></em><b class="sr">: Separar modelo de negocio y canal, y ubicar ERP, CRM y SCM</b></a><a href="#modelos" data-g="modelos" title="Reconocer los siete modelos de negocio digitales"><span><svg class="i"><use href="#i-grid"/></svg></span>7 modelos<em class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></em><b class="sr">: Reconocer los siete modelos de negocio digitales</b></a><a href="#valor" data-g="valor" title="Explicar los siete mecanismos de creación de valor"><span><svg class="i"><use href="#i-network"/></svg></span>7 mecanismos<em class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></em><b class="sr">: Explicar los siete mecanismos de creación de valor</b></a><a href="#ventajas" data-g="ventajas" title="Evaluar ventajas, desventajas y riesgos"><span><svg class="i"><use href="#i-alert"/></svg></span>Ventajas y riesgos<em class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></em><b class="sr">: Evaluar ventajas, desventajas y riesgos</b></a><a href="#casos" data-g="casos" title="Analizar Mercado Libre, Uber y Netflix con datos de 2025"><span><svg class="i"><use href="#i-chart"/></svg></span>3 casos<em class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></em><b class="sr">: Analizar Mercado Libre, Uber y Netflix con datos de 2025</b></a></nav><div class="goalbar"><span id="goalN">0 de 6 temas vistos</span><span class="track"><i id="goalT"></i></span></div>
   </div>
 </section>
 
@@ -567,22 +727,13 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
       <h2 class="h2">Los <em>SIG</em> conectan toda la empresa</h2>
       <p class="sub">Recolectan, procesan, almacenan y distribuyen información para decidir, coordinar y controlar (Laudon &amp; Laudon, 2022).</p>
     </div>
-    <div class="sigphoto"><figure class="photo"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1100&q=75" alt="Panel de indicadores con gráficas en la pantalla de un portátil" onerror="this.style.visibility='hidden'"><span class="ptag">Datos convertidos en información</span><a class="credit" href="https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00" target="_blank" rel="noopener">Foto: Unsplash</a></figure><div class="funcs">
-      <div class="func"><div class="ico"><svg class="i"><use href="#i-calendar"/></svg></div><b>Planear</b></div>
-      <div class="func"><div class="ico"><svg class="i"><use href="#i-share"/></svg></div><b>Coordinar</b></div>
-      <div class="func"><div class="ico"><svg class="i"><use href="#i-target"/></svg></div><b>Controlar</b></div>
-      <div class="func"><div class="ico"><svg class="i"><use href="#i-bulb"/></svg></div><b>Decidir</b></div>
-    </div></div>
+    <div class="sigphoto"><figure class="photo"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1100&q=75" alt="Panel de indicadores con gráficas en la pantalla de un portátil" onerror="this.style.visibility='hidden'"><div class="fcap" id="fcap" aria-live="polite"><div class="ico"><svg class="i"><use href="#i-calendar"/></svg></div><div><b>Planear</b><span>Fija metas y presupuestos con datos históricos y proyecciones.</span></div></div><a class="credit" href="https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00" target="_blank" rel="noopener">Foto: Unsplash</a></figure><div class="funcs" id="funcs" role="group" aria-label="Funciones de la administración"><button class="func" type="button" data-f="0" aria-pressed="true"><div class="ico"><svg class="i"><use href="#i-calendar"/></svg></div><b>Planear</b></button><button class="func" type="button" data-f="1" aria-pressed="false"><div class="ico"><svg class="i"><use href="#i-share"/></svg></div><b>Coordinar</b></button><button class="func" type="button" data-f="2" aria-pressed="false"><div class="ico"><svg class="i"><use href="#i-target"/></svg></div><b>Controlar</b></button><button class="func" type="button" data-f="3" aria-pressed="false"><div class="ico"><svg class="i"><use href="#i-bulb"/></svg></div><b>Decidir</b></button></div></div>
     <h3 style="font-size:1.3rem;margin-bottom:6px">El recorrido de una venta</h3>
     <p class="hint" style="margin:0 0 16px"><svg class="i"><use href="#i-hand"/></svg>Una clienta compra una chaqueta en la app. Toca cada paso.</p>
     <div class="flowbox"><svg class="flowsvg" id="flowsvg" viewBox="0 0 760 170" role="group" aria-label="Recorrido de una venta por los sistemas"></svg></div>
     <div class="flowcap"><span class="badge" id="flowN">Paso 1 de 5</span><p id="flowTxt" aria-live="polite"></p><button class="btn" type="button" id="flowNext">Siguiente <svg class="i"><use href="#i-arrow"/></svg></button></div>
 
-    <div class="grid c3" style="margin-top:40px">
-      <button class="tile" type="button" data-m="erp"><div class="ico cy"><svg class="i"><use href="#i-file"/></svg></div><b>ERP</b><small>Integra todas las áreas en una sola base de datos.</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
-      <button class="tile" type="button" data-m="crm"><div class="ico cy"><svg class="i"><use href="#i-user"/></svg></div><b>CRM</b><small>Conoce y gestiona a cada cliente.</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
-      <button class="tile" type="button" data-m="scm"><div class="ico cy"><svg class="i"><use href="#i-truck"/></svg></div><b>SCM</b><small>Coordina proveedores, inventarios y envíos.</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
-    </div>
+    <figure class="hs" id="hs"><img src="https://images.unsplash.com/photo-1770013413878-2530e2c3d82b?auto=format&fit=crop&w=1400&h=875&q=75" alt="Emprendedora revisa un pedido con el celular junto a su portátil y cajas" onerror="this.style.visibility='hidden'"><button class="pin" type="button" data-hs="erp" style="left:20%;top:72%" aria-expanded="false"><span class="dot2"></span>ERP</button><button class="pin" type="button" data-hs="crm" style="left:61%;top:52%" aria-expanded="false"><span class="dot2"></span>CRM</button><button class="pin" type="button" data-hs="scm" style="left:88%;top:40%" aria-expanded="false"><span class="dot2"></span>SCM</button><a class="credit" href="https://unsplash.com/photos/k63Or81F8-M" target="_blank" rel="noopener">Foto: Unsplash</a></figure><p class="hshint"><svg class="i"><use href="#i-hand"/></svg>Una emprendedora vende en línea. Toca cada punto para ver qué sistema la apoya.</p><div id="hsPop" aria-live="polite"></div>
   </div>
 </section>
 
@@ -599,6 +750,7 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
       <button class="tile" type="button" data-m="canales"><div class="ico"><svg class="i"><use href="#i-chat"/></svg></div><b>Canales y omnicanalidad</b><span class="stat">1,7×</span><small>más compran los clientes omnicanal (McKinsey &amp; Company, 2022).</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
       <button class="tile" type="button" data-m="propuesta"><div class="ico"><svg class="i"><use href="#i-heart"/></svg></div><b>Propuesta de valor</b><span class="stat g">Datos → oferta</span><small>Cada clic revela qué quiere el cliente.</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
     </div>
+    <figure class="ba" id="ba" style="--p:50%"><img src="https://images.unsplash.com/photo-1556742521-9713bf272865?auto=format&fit=crop&w=1400&h=820&q=75" alt="Pago con el celular en un terminal sin contacto" onerror="this.style.visibility='hidden'"><div class="batop"><img src="https://images.unsplash.com/photo-1763730512449-f1a505f432a9?auto=format&fit=crop&w=1400&h=820&q=75" alt="Mano escribiendo en un cuaderno junto a una calculadora y efectivo" onerror="this.style.visibility='hidden'"></div><span class="lb l">Antes<small>Cuaderno, calculadora y efectivo</small></span><span class="lb r">Después<small>Pago con el celular y datos al instante</small></span><span class="baline"></span><span class="knob" aria-hidden="true">⇆</span><input type="range" min="0" max="100" value="50" id="baR" aria-label="Deslizar para comparar antes y después de digitalizar el proceso de cobro"><a class="credit" href="https://unsplash.com/photos/leLj_06wjJQ" target="_blank" rel="noopener">Fotos: Unsplash</a></figure><p class="bahint"><svg class="i"><use href="#i-hand"/></svg>Arrastra la línea para comparar el mismo proceso antes y después.</p>
   </div>
 </section>
 
@@ -608,9 +760,9 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
     <div class="head">
       <span class="eyebrow"><svg class="i"><use href="#i-grid"/></svg>Modelos de negocio digitales</span>
       <h2 class="h2"><em>Siete</em> formas de ganar dinero en digital</h2>
-      <p class="hint"><svg class="i"><use href="#i-hand"/></svg>Toca un modelo para ver cómo funciona.</p>
+      <p class="hint"><svg class="i"><use href="#i-hand"/></svg>Elige un modelo o usa las flechas. En celular también puedes deslizar la foto.</p>
     </div>
-    <div class="grid c4" id="models"></div>
+    <div class="mviz"><div class="mchips" id="mchips" role="group" aria-label="Modelos de negocio"></div><div class="mstage" id="mstage" aria-live="polite"><img id="mImg" alt=""><div class="mcard" id="mcard"></div><div class="mnav"><button class="prev" type="button" id="mPrev" aria-label="Modelo anterior"><svg class="i"><use href="#i-arrow"/></svg></button><button type="button" id="mNext" aria-label="Modelo siguiente"><svg class="i"><use href="#i-arrow"/></svg></button></div><span class="mcount" id="mCount"></span><a class="credit" id="mCred" target="_blank" rel="noopener">Foto: Unsplash</a></div></div>
 
     <div class="dnd">
       <div>
@@ -637,6 +789,7 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
     </div>
     <div class="grid c4" id="values"></div>
 
+    <div class="scale" id="scale"><div><h3 style="font-size:1.35rem;margin-bottom:6px">Simulador de escalabilidad</h3><p class="sub" style="font-size:.95rem">Mueve el número de clientes y mira cuánto cuesta atender a cada uno.</p><label for="scR" class="sr">Número de clientes</label><input class="range" type="range" id="scR" min="0" max="5" step="1" value="0"><div class="big" id="scN">100 clientes</div><p class="src">Ejercicio ilustrativo con valores inventados: no son datos de ninguna empresa.</p></div><div class="sbars"><div class="sbar t"><b>Tienda física <span id="scT"></span></b><div class="tr"><i id="scTi"></i></div></div><div class="sbar d"><b>Servicio digital <span id="scD"></span></b><div class="tr"><i id="scDi"></i></div></div><p class="src" style="margin:0" id="scTxt"></p></div></div>
     <div class="netsim">
       <svg id="netsvg" viewBox="0 0 520 320" role="img" aria-label="Red de vendedores y compradores conectados"></svg>
       <div>
@@ -822,12 +975,14 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
       <span class="eyebrow"><svg class="i"><use href="#i-bulb"/></svg>Síntesis</span>
       <h2 class="h2">Lo que <em>aprendimos</em></h2>
     </div>
+    <div class="thesis"><svg class="i"><use href="#i-bulb"/></svg><p>La pregunta clave para una empresa no es qué tecnología adoptar, sino qué parte de su modelo de negocio quiere cambiar con ella.<small>Postura del equipo</small></p></div>
     <div class="grid c4 concl">
       <div class="tile"><div class="ico"><svg class="i"><use href="#i-refresh"/></svg></div><b>La tecnología sola no transforma</b><p>Hay que cambiar procesos, canales y propuesta de valor (Smaje &amp; Zemmel, 2024).</p></div>
       <div class="tile"><div class="ico"><svg class="i"><use href="#i-database"/></svg></div><b>Sin SIG no hay modelo digital</b><p>El ERP, el CRM y el SCM sostienen el negocio.</p></div>
       <div class="tile"><div class="ico"><svg class="i"><use href="#i-network"/></svg></div><b>El valor está en la red</b><p>Ecosistema, coordinación y personalización explican los tres casos.</p></div>
       <div class="tile"><div class="ico"><svg class="i"><use href="#i-alert"/></svg></div><b>El valor tiene costos</b><p>Vendedores dependientes, trabajadores de plataformas y datos personales, también en Colombia.</p></div>
     </div>
+    <div class="notes"><figure class="photo law" id="law"><img src="https://images.unsplash.com/photo-1572195577046-2f25894c06fc?auto=format&fit=crop&w=1000&q=75" alt="Repartidor en moto por una calle" onerror="this.style.visibility='hidden'"><a class="credit" href="https://unsplash.com/photos/man-driving-motor-scooter-delivering-good-afDu-GuxjjM" target="_blank" rel="noopener">Foto: Unsplash</a><div class="lawin"><b><svg class="i"><use href="#i-law"/></svg>En Colombia · Ley 2466 de 2025</b><div class="split2" role="img" aria-label="Aportes a salud y pensión de repartidores independientes: 60 % la plataforma y 40 % el repartidor"><i class="p">Plataforma 60 %</i><i class="w">40 %</i></div><small>Aportes a salud y pensión de repartidores independientes (Rojas Puello, 2025).</small></div></figure><div class="lims"><span class="limhd">Limitaciones</span><div class="lim"><div class="ico"><svg class="i"><use href="#i-file"/></svg></div><b>Cifras reportadas por las propias empresas</b></div><div class="lim"><div class="ico"><svg class="i"><use href="#i-store"/></svg></div><b>Solo tres empresas grandes, no pymes</b></div><a class="btn alt" href="#simulador">Por eso: simulador pyme <svg class="i"><use href="#i-arrow"/></svg></a></div></div>
   </div>
 </section>
 
@@ -838,7 +993,7 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
       <span class="eyebrow"><svg class="i"><use href="#i-book"/></svg>Fuentes</span>
       <h2 class="h2">Referencias</h2>
     </div>
-    <details class="refs"><summary><svg class="i"><use href="#i-book2"/></svg>Ver las 26 referencias en APA 7</summary><ol id="refs"></ol></details>
+    <details class="refs"><summary><svg class="i"><use href="#i-book2"/></svg>Ver las 26 referencias en APA 7</summary><div class="rfil" id="rfil" role="group" aria-label="Filtrar referencias"></div><ol id="refs"></ol></details>
   </div>
 </section>
 
@@ -852,13 +1007,13 @@ footer{padding-block:28px;text-align:center;color:var(--soft);font-size:.82rem;b
     <div class="credits">
       <div><div class="ico soft"><svg class="i"><use href="#i-users"/></svg></div><h3>Autoras</h3>Vanessa Correa Delgado<br>Lizeth Paola Gómez Ramírez<h3>Curso</h3>Sistemas de Información Gerencial · Docente: Javier José Niño · Facultad de Ciencias Sociales, Humanas y Empresariales · Universidad Piloto de Colombia · 2026</div>
       <div><div class="ico soft"><svg class="i"><use href="#i-code"/></svg></div><h3>Herramientas</h3>HTML, CSS y JavaScript · GitHub Pages · Open Sans (Google Fonts) · íconos propios en SVG y fotografías de Unsplash.<h3>Uso de inteligencia artificial</h3>Claude (Anthropic, 2026) apoyó la búsqueda de información, las figuras y el código. Los datos se contrastaron con las fuentes originales.</div>
-      <div><div class="ico soft"><svg class="i"><use href="#i-play"/></svg></div><h3>Imágenes y videos</h3><ul><li>Figuras 1 y 2, gráfico y simuladores: elaboración propia con apoyo de Claude (Anthropic, 2026).</li><li>Fotografías: Unsplash, uso libre según la licencia de Unsplash: <a href="https://unsplash.com/photos/a-woman-holding-a-tablet-computer-and-shopping-bags-zg__oh_xu9g" target="_blank" rel="noopener">inicio</a>, <a href="https://unsplash.com/photos/man-in-grey-crew-neck-t-shirt-smiling-to-woman-on-counter-Ox6SW103KtM" target="_blank" rel="noopener">empresa tradicional</a>, <a href="https://unsplash.com/photos/person-using-laptop-computer-holding-card-Q59HmzK38eQ" target="_blank" rel="noopener">empresa digital</a>, <a href="https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00" target="_blank" rel="noopener">SIG</a>, <a href="https://unsplash.com/photos/clothing-boutique-interior-with-hanging-racks-qnKhZJPKFD8" target="_blank" rel="noopener">simulador</a>, <a href="https://unsplash.com/photos/flat-screen-television-displaying-netflix-logo-AWOl7qqsffM" target="_blank" rel="noopener">Netflix</a>.</li><li>Videos: Valora Analitik (2025), Blu Radio (2025) y Tinku (s. f.), en YouTube.</li></ul></div>
+      <div><div class="ico soft"><svg class="i"><use href="#i-play"/></svg></div><h3>Imágenes y videos</h3><ul><li>Logo, figuras 1 y 2, gráfico y simuladores: elaboración propia con apoyo de Claude (Anthropic, 2026).</li><li>Fotografías: Unsplash, uso libre según la licencia de Unsplash: <a href="https://unsplash.com/photos/a-woman-holding-a-tablet-computer-and-shopping-bags-zg__oh_xu9g" target="_blank" rel="noopener">inicio</a>, <a href="https://unsplash.com/photos/man-in-grey-crew-neck-t-shirt-smiling-to-woman-on-counter-Ox6SW103KtM" target="_blank" rel="noopener">empresa tradicional</a>, <a href="https://unsplash.com/photos/person-using-laptop-computer-holding-card-Q59HmzK38eQ" target="_blank" rel="noopener">empresa digital</a>, <a href="https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00" target="_blank" rel="noopener">SIG</a>, <a href="https://unsplash.com/photos/clothing-boutique-interior-with-hanging-racks-qnKhZJPKFD8" target="_blank" rel="noopener">simulador</a>, <a href="https://unsplash.com/photos/flat-screen-television-displaying-netflix-logo-AWOl7qqsffM" target="_blank" rel="noopener">Netflix</a>, <a href="https://unsplash.com/photos/man-driving-motor-scooter-delivering-good-afDu-GuxjjM" target="_blank" rel="noopener">repartidor</a>, <a href="https://unsplash.com/photos/A6JxK37IlPo" target="_blank" rel="noopener">plataforma</a>, <a href="https://unsplash.com/photos/q8kR_ie6WnI" target="_blank" rel="noopener">marketplace</a>, <a href="https://unsplash.com/photos/D-qq7W751vs" target="_blank" rel="noopener">economía colaborativa</a>, <a href="https://unsplash.com/photos/HU-uL54pfQI" target="_blank" rel="noopener">freemium</a>, <a href="https://unsplash.com/photos/lVZjvw-u9V8" target="_blank" rel="noopener">pago por uso</a>, <a href="https://unsplash.com/photos/leLj_06wjJQ" target="_blank" rel="noopener">antes</a>, <a href="https://unsplash.com/photos/oRKF_ZBJYGM" target="_blank" rel="noopener">después</a>, <a href="https://unsplash.com/photos/k63Or81F8-M" target="_blank" rel="noopener">sistemas empresariales</a>.</li><li>Videos: Valora Analitik (2025), Blu Radio (2025) y Tinku (s. f.), en YouTube.</li></ul></div>
     </div>
   </div>
 </section>
 </main>
 
-<footer><div class="wrap">Empresa Digital y Nuevos Modelos de Negocio · Universidad Piloto de Colombia · 2026</div></footer>
+<footer><div class="wrap flogo"><svg aria-hidden="true" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lgF" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lgF)"/><g fill="none" stroke="#0B1020" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M14 30h36"/><path d="M14 30l4-10h28l4 10"/><path d="M14 30c0 4 3 6 6 6s6-2 6-6c0 4 3 6 6 6s6-2 6-6c0 4 3 6 6 6s6-2 6-6"/><path d="M18 36v14h28V36"/><path d="M28 50v-8h8v8"/></g><path d="M24 12l8-4 8 4" stroke="#0B1020" stroke-width="2.5" fill="none"/><g fill="#FACC15" stroke="#0B1020" stroke-width="2"><circle cx="24" cy="12" r="3"/><circle cx="32" cy="8" r="3"/><circle cx="40" cy="12" r="3"/></g></svg><span>Empresa Digital y Nuevos Modelos de Negocio · Universidad Piloto de Colombia · 2026</span></div></footer>
 
 <!-- Ventana emergente -->
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
@@ -977,8 +1132,18 @@ const MO=[['cart','Comercio electrónico','Vende lo suyo en línea','La empresa 
  ['car','Economía colaborativa o bajo demanda','Activos de terceros','Se paga por el acceso temporal a un activo ajeno; la plataforma cobra un porcentaje de cada transacción.','Uber.'],
  ['gift','Freemium','Gratis + premium','La versión gratuita atrae usuarios; una parte paga por funciones avanzadas y financia la operación.','Música gratis con anuncios.'],
  ['cloud','Pago por uso','Pagas lo que consumes','Requiere medir el consumo en tiempo real: gigabytes, horas o kilómetros.','Almacenamiento en la nube.']];
-$('#models').innerHTML=MO.map((m,i)=>`<button class="tile" type="button" data-mo="${i}"><div class="ico">${ic(m[0])}</div><b>${m[1]}</b><small>${m[2]}</small><span class="more">Ver más ${ic('plus')}</span></button>`).join('');
-$('#models').addEventListener('click',e=>{const b=e.target.closest('[data-mo]');if(!b)return;const m=MO[+b.dataset.mo];openM(`<div class="ico">${ic(m[0])}</div><h3 id="mTitle">${m[1]}</h3><p>${m[3]}</p><div class="ex"><b>Ejemplo:</b> ${m[4]}</div>`)});
+const MPH=[['photo-1563013544-824ae1b704d3','Persona comprando en línea con un portátil y una tarjeta','https://unsplash.com/photos/person-using-laptop-computer-holding-card-Q59HmzK38eQ'],['photo-1510557880182-3d4d3cba35a5','Mano sosteniendo un celular con íconos de aplicaciones','https://unsplash.com/photos/A6JxK37IlPo'],['photo-1580674285054-bed31e145f59','Cajas de cartón en una furgoneta de reparto','https://unsplash.com/photos/q8kR_ie6WnI'],['photo-1574375927938-d5a98e8ffe85','Televisor que muestra el logo de Netflix','https://unsplash.com/photos/flat-screen-television-displaying-netflix-logo-AWOl7qqsffM'],['photo-1600320254374-ce2d293c324e','Persona conduciendo con una aplicación de navegación','https://unsplash.com/photos/D-qq7W751vs'],['photo-1511367734837-f2956f0d8020','Celular con audífonos','https://unsplash.com/photos/HU-uL54pfQI'],['photo-1584169417032-d34e8d805e8b','Pasillo de una sala de servidores','https://unsplash.com/photos/lVZjvw-u9V8']];
+(()=>{let mi=0;const chips=$('#mchips'),img=$('#mImg'),card=$('#mcard');
+ chips.innerHTML=MO.map((m,i)=>`<button type="button" data-mi="${i}" aria-pressed="${i===0}">${ic(m[0])}${m[1].split(' o ')[0]}</button>`).join('');
+ function showM(i){mi=(i+MO.length)%MO.length;const m=MO[mi],p=MPH[mi];img.style.opacity=0;setTimeout(()=>{img.src=`https://images.unsplash.com/${p[0]}?auto=format&fit=crop&w=1300&q=75`;img.alt=p[1];img.onload=()=>img.style.opacity=1;img.onerror=()=>{img.style.visibility='hidden'}},180);
+  card.innerHTML=`<div class="ico">${ic(m[0])}</div><h3>${m[1]}</h3><span class="tag">${m[2]}</span><p>${m[3]}</p><div class="ex"><b>Ejemplo:</b> ${m[4]}</div>`;
+  $('#mCount').textContent=`${mi+1} / ${MO.length}`;$('#mCred').href=p[2];chips.querySelectorAll('button').forEach((b,k)=>b.setAttribute('aria-pressed',k===mi));
+  const cb=chips.children[mi];if(cb&&chips.scrollWidth>chips.clientWidth)chips.scrollTo({left:cb.offsetLeft-16,behavior:'smooth'})}
+ chips.addEventListener('click',e=>{const b=e.target.closest('[data-mi]');if(b)showM(+b.dataset.mi)});
+ $('#mPrev').addEventListener('click',()=>showM(mi-1));$('#mNext').addEventListener('click',()=>showM(mi+1));
+ let x0=null;const st=$('#mstage');st.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});
+ st.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>45)showM(mi+(dx<0?1:-1));x0=null});
+ showM(0)})();
 
 /* ---------- Arrastrar y soltar ---------- */
 const DD=[['shirt','Marca de ropa con su propia tienda en línea','La empresa vende sus propios productos y gana por el margen.','¿Hay intermediación o vende lo suyo?'],
@@ -1168,7 +1333,50 @@ const R=[['Anthropic. (2026). <i>Claude</i> (versión de septiembre de 2026) [Mo
  ['Uber Technologies, Inc. (2026, 4 de febrero). <i>Uber announces results for fourth quarter and full year 2025</i>.','https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2025/'],
  ['Valora Analitik. (2025, 13 de abril). <i>¡Mercado Libre invertirá US$470 millones en Colombia en 2025!</i> [Video]. YouTube.','https://www.youtube.com/shorts/3LP-XNjOg84'],
  ['Van Alstyne, M. W., &amp; Parker, G. G. (2021, 17 de diciembre). Digital transformation changes how companies create value. <i>Harvard Business Review</i>.','https://hbr.org/2021/12/digital-transformation-changes-how-companies-create-value']];
-$('#refs').innerHTML=R.map(r=>`<li>${r[0]}${r[1]?` <a href="${r[1]}" target="_blank" rel="noopener">${r[1]}</a>`:''}</li>`).join('');
+const RT=r=>/\[Video\]/.test(r[0])?'v':/^Anthropic/.test(r[0])?'ia':/Harvard Business|MIT Sloan|Laudon/.test(r[0])?'l':'i';
+const RN={l:'Libros y revistas',i:'Informes y reportes',v:'Videos',ia:'Inteligencia artificial'};
+function drawR(f){$('#refs').innerHTML=R.filter(r=>f==='all'||RT(r)===f).map(r=>`<li><span class="rtag">${RN[RT(r)]}</span>${r[0]}${r[1]?` <a href="${r[1]}" target="_blank" rel="noopener">${r[1]}</a>`:''}</li>`).join('');
+ $('#rfil').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f===f))}
+$('#rfil').innerHTML=[['all',`Todas (${R.length})`],...Object.keys(RN).map(k=>[k,`${RN[k]} (${R.filter(r=>RT(r)===k).length})`])].map(([k,t])=>`<button type="button" data-f="${k}">${t}</button>`).join('');
+$('#rfil').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(b)drawR(b.dataset.f)});
+drawR('all');
+const askB=$('#askBtn');askB.addEventListener('click',()=>{const o=askB.getAttribute('aria-expanded')!=='true';askB.setAttribute('aria-expanded',o);$('#askAns').hidden=!o;askB.firstChild.textContent=o?'Ocultar respuesta ':'Ver respuesta '});
+
+/* ---------- Dinámico ---------- */
+(()=>{const F=[['calendar','Planear','Fija metas y presupuestos con datos históricos y proyecciones.'],['share','Coordinar','Ventas, bodega y finanzas trabajan con la misma información.'],['target','Controlar','Los indicadores comparan lo logrado con lo planeado.'],['bulb','Decidir','Uber elige en segundos qué conductor asignar a cada viaje.']];
+ const box=document.getElementById('funcs'),cap=document.getElementById('fcap');let cur=0,auto=null;
+ function show(i){cur=i;box.querySelectorAll('.func').forEach((b,k)=>b.setAttribute('aria-pressed',k===i));const f=F[i];
+  cap.innerHTML=`<div class="ico"><svg class="i"><use href="#i-${f[0]}"/></svg></div><div><b>${f[1]}</b><span>${f[2]}</span></div>`;cap.classList.remove('swap');void cap.offsetWidth;cap.classList.add('swap')}
+ box.addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(!b)return;clearInterval(auto);auto=null;show(+b.dataset.f)});
+ const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!calm&&'IntersectionObserver' in window){new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&auto===null&&box.dataset.t!=='x'){auto=setInterval(()=>show((cur+1)%F.length),3500)}else if(!e.isIntersecting&&auto){clearInterval(auto);auto=null}}),{threshold:.4}).observe(box)}
+ box.addEventListener('click',()=>{box.dataset.t='x'},{once:true});
+ const law=document.getElementById('law');
+ if('IntersectionObserver' in window){new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){law.classList.add('go');o.disconnect()}}),{threshold:.3}).observe(law)}else law.classList.add('go');
+ const seen=new Set(),links=[...document.querySelectorAll('#goals [data-g]')];
+ function mark(id){if(seen.has(id))return;seen.add(id);const a=links.find(l=>l.dataset.g===id);if(a)a.classList.add('seen');
+  document.getElementById('goalN').textContent=`${seen.size} de ${links.length} temas vistos`;document.getElementById('goalT').style.width=(seen.size/links.length*100)+'%'}
+ if('IntersectionObserver' in window){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)mark(e.target.id)}),{rootMargin:'-40% 0px -50% 0px'});
+  links.forEach(l=>{const t=document.getElementById(l.dataset.g);if(t)o.observe(t)})}
+})();
+
+/* ---------- Interactivo ---------- */
+(()=>{const ba=$('#ba'),r=$('#baR');const up=()=>ba.style.setProperty('--p',r.value+'%');r.addEventListener('input',up);up();
+ const HS={erp:['ERP','Registra la venta','Al confirmar el pedido, el ERP descuenta el inventario, emite la factura y actualiza la contabilidad.'],
+  crm:['CRM','Conoce a la clienta','Guarda sus compras, mensajes y calificaciones para atenderla mejor y ofrecerle lo que le interesa.'],
+  scm:['SCM','Mueve el producto','Coordina el inventario de cajas, el despacho y el seguimiento del envío hasta la entrega.']};
+ const hs=$('#hs'),pop=$('#hsPop');
+ pop.addEventListener('click',e=>{if(e.target.closest('.x2')){pop.innerHTML='';hs.querySelectorAll('.pin').forEach(p=>p.setAttribute('aria-expanded','false'))}});
+ hs.addEventListener('click',e=>{const x=null;if(x){pop.innerHTML='';hs.querySelectorAll('.pin').forEach(p=>p.setAttribute('aria-expanded','false'));return}
+  const b=e.target.closest('[data-hs]');if(!b)return;const k=b.dataset.hs,h=HS[k],m=M[k];hs.querySelectorAll('.pin').forEach(p=>p.setAttribute('aria-expanded',p===b));
+  pop.innerHTML=`<div class="pop" role="status"><button class="x2" type="button" aria-label="Cerrar">${ic('close','width:18px;height:18px')}</button><span class="tag">${m[2]}</span><b>${h[0]}: ${h[1]}</b><p>${h[2]}</p></div>`});
+ const N=[100,1000,10000,100000,1000000,10000000],FIX=50000000,VAR=2000,MARG=50;const cop=n=>'$'+Math.round(n).toLocaleString('es-CO');
+ function sc2(){const n=N[+$('#scR').value],t=VAR,d=FIX/n+MARG,mx=Math.max(t,d);
+  $('#scN').textContent=n.toLocaleString('es-CO')+' clientes';$('#scT').textContent=cop(t)+' por cliente';$('#scD').textContent=cop(d)+' por cliente';
+  $('#scTi').style.width=Math.max(2,t/mx*100)+'%';$('#scDi').style.width=Math.max(2,d/mx*100)+'%';
+  $('#scTxt').textContent=d<t?'Con muchos clientes, el costo de la plataforma se reparte y atender a uno más casi no cuesta.':'Al inicio, el servicio digital es caro: la plataforma se paga con pocos clientes.'}
+ $('#scR').addEventListener('input',sc2);sc2();
+})();
 })();
 </script>
 
