@@ -1,21 +1,9 @@
-ARTEFACTO: Empresa Digital y Nuevos Modelos de Negocio
-Sistemas de Información Gerencial - Universidad Piloto de Colombia
+VERSIÓN 4 - ARTEFACTO "EMPRESA DIGITAL" (con fotografías reales)
+Un solo archivo: index.html. Las fotos se cargan desde Unsplash cuando la página está publicada.
 
-CONTENIDO DE LA CARPETA
-- index.html  -> la página completa (no cambiar el nombre)
-- img/        -> imágenes de las figuras (subir la carpeta completa)
-
-CÓMO PUBLICARLO EN GITHUB PAGES
-1. Entrar a github.com con su cuenta.
-2. Botón "New" para crear un repositorio. Nombre: empresa-digital. Marcar "Public". Clic en "Create repository".
-3. En el repositorio, clic en "uploading an existing file" (o "Add file" > "Upload files").
-4. Arrastrar index.html y la carpeta img (con sus dos imágenes). Clic en "Commit changes".
-5. Ir a Settings > Pages. En "Source" elegir "Deploy from a branch", rama "main", carpeta "/(root)". Clic en "Save".
-6. Esperar 1 o 2 minutos y recargar Settings > Pages. Allí aparece el enlace:
-   https://SU-USUARIO.github.io/empresa-digital/
-7. Probar el enlace en una ventana de incógnito, en el celular y en el equipo de otra persona.
-8. Pegar el enlace en la portada del Word, en el espacio resaltado en amarillo, y quitar el resaltado.
-
-ANTES DE ENTREGAR, REVISAR
-- Que los tres videos se reproduzcan. Si alguno no se puede ver dentro de la página, queda el enlace "Ver en YouTube" debajo.
-- Que las dos imágenes carguen (si no cargan, la carpeta img no se subió completa).
+CÓMO REEMPLAZAR LA PÁGINA EN GITHUB
+1. Entra a tu repositorio Empresa-digital en github.com.
+2. Clic en "Add file" > "Upload files".
+3. Arrastra este index.html (reemplaza el anterior).
+4. Clic en el botón verde "Commit changes".
+5. Espera 1 o 2 minutos y abre tu enlace con Ctrl + F5.
