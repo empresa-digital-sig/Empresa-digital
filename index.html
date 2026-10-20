@@ -513,6 +513,23 @@ footer .flogo{display:flex;align-items:center;justify-content:center;gap:10px;te
 footer .flogo svg{width:28px;height:28px;flex:none}
 
 /* ---------- Interactivo (oct. 2026) ---------- */
+.bawrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px;align-items:center;margin-top:28px}
+@media (max-width:860px){.bawrap{grid-template-columns:minmax(0,1fr);gap:12px}}
+.bawrap .ba{margin:0;aspect-ratio:4/3}
+.bawrap .ba img{object-position:center 70%}
+.baside{display:grid;gap:10px}
+.baside .bahint{margin:0 0 4px}
+.barow{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr) minmax(0,1fr);gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 12px;font-size:.88rem}
+.barow .bk{font-weight:800;color:var(--fg)}
+.barow .bo,.barow .bn{padding:6px 8px;border-radius:10px;text-align:center;color:var(--soft);transition:background .3s,color .3s}
+.baside.old .bo{background:rgba(251,146,60,.18);color:var(--fg)}
+.baside.new .bn{background:rgba(34,211,238,.16);color:var(--fg)}
+
+.hswrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px;align-items:center;margin-top:40px}
+@media (max-width:860px){.hswrap{grid-template-columns:minmax(0,1fr);gap:12px}}
+.hswrap .hs{margin-top:0}
+.hsside .hshint{margin:0 0 4px}
+
 .ba{position:relative;margin:28px 0 0;border-radius:24px;overflow:hidden;aspect-ratio:12/7;background:linear-gradient(135deg,#2a1f5c,#123047);user-select:none;touch-action:pan-y}
 .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ba .batop{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
@@ -733,7 +750,7 @@ footer .flogo svg{width:28px;height:28px;flex:none}
     <div class="flowbox"><svg class="flowsvg" id="flowsvg" viewBox="0 0 760 170" role="group" aria-label="Recorrido de una venta por los sistemas"></svg></div>
     <div class="flowcap"><span class="badge" id="flowN">Paso 1 de 5</span><p id="flowTxt" aria-live="polite"></p><button class="btn" type="button" id="flowNext">Siguiente <svg class="i"><use href="#i-arrow"/></svg></button></div>
 
-    <figure class="hs" id="hs"><img src="https://images.unsplash.com/photo-1770013413878-2530e2c3d82b?auto=format&fit=crop&w=1400&h=875&q=75" alt="Emprendedora revisa un pedido con el celular junto a su portátil y cajas" onerror="this.style.visibility='hidden'"><button class="pin" type="button" data-hs="erp" style="left:20%;top:72%" aria-expanded="false"><span class="dot2"></span>ERP</button><button class="pin" type="button" data-hs="crm" style="left:61%;top:52%" aria-expanded="false"><span class="dot2"></span>CRM</button><button class="pin" type="button" data-hs="scm" style="left:88%;top:40%" aria-expanded="false"><span class="dot2"></span>SCM</button><a class="credit" href="https://unsplash.com/photos/k63Or81F8-M" target="_blank" rel="noopener">Foto: Unsplash</a></figure><p class="hshint"><svg class="i"><use href="#i-hand"/></svg>Una emprendedora vende en línea. Toca cada punto para ver qué sistema la apoya.</p><div id="hsPop" aria-live="polite"></div>
+    <div class="hswrap"><figure class="hs" id="hs"><img src="https://images.unsplash.com/photo-1770013413878-2530e2c3d82b?auto=format&fit=crop&w=1400&h=875&q=75" alt="Emprendedora revisa un pedido con el celular junto a su portátil y cajas" onerror="this.style.visibility='hidden'"><button class="pin" type="button" data-hs="erp" style="left:20%;top:72%" aria-expanded="false"><span class="dot2"></span>ERP</button><button class="pin" type="button" data-hs="crm" style="left:62%;top:61%" aria-expanded="false"><span class="dot2"></span>CRM</button><button class="pin" type="button" data-hs="scm" style="left:88%;top:40%" aria-expanded="false"><span class="dot2"></span>SCM</button><a class="credit" href="https://unsplash.com/photos/k63Or81F8-M" target="_blank" rel="noopener">Foto: Unsplash</a></figure><div class="hsside"><p class="hshint"><svg class="i"><use href="#i-hand"/></svg>Una emprendedora vende en línea. Toca cada punto para ver qué sistema la apoya.</p><div id="hsPop" aria-live="polite"></div></div></div>
   </div>
 </section>
 
@@ -750,7 +767,7 @@ footer .flogo svg{width:28px;height:28px;flex:none}
       <button class="tile" type="button" data-m="canales"><div class="ico"><svg class="i"><use href="#i-chat"/></svg></div><b>Canales y omnicanalidad</b><span class="stat">1,7×</span><small>más compran los clientes omnicanal (McKinsey &amp; Company, 2022).</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
       <button class="tile" type="button" data-m="propuesta"><div class="ico"><svg class="i"><use href="#i-heart"/></svg></div><b>Propuesta de valor</b><span class="stat g">Datos → oferta</span><small>Cada clic revela qué quiere el cliente.</small><span class="more">Ver más <svg class="i"><use href="#i-plus"/></svg></span></button>
     </div>
-    <figure class="ba" id="ba" style="--p:50%"><img src="https://images.unsplash.com/photo-1556742521-9713bf272865?auto=format&fit=crop&w=1400&h=820&q=75" alt="Pago con el celular en un terminal sin contacto" onerror="this.style.visibility='hidden'"><div class="batop"><img src="https://images.unsplash.com/photo-1763730512449-f1a505f432a9?auto=format&fit=crop&w=1400&h=820&q=75" alt="Mano escribiendo en un cuaderno junto a una calculadora y efectivo" onerror="this.style.visibility='hidden'"></div><span class="lb l">Antes<small>Cuaderno, calculadora y efectivo</small></span><span class="lb r">Después<small>Pago con el celular y datos al instante</small></span><span class="baline"></span><span class="knob" aria-hidden="true">⇆</span><input type="range" min="0" max="100" value="50" id="baR" aria-label="Deslizar para comparar antes y después de digitalizar el proceso de cobro"><a class="credit" href="https://unsplash.com/photos/leLj_06wjJQ" target="_blank" rel="noopener">Fotos: Unsplash</a></figure><p class="bahint"><svg class="i"><use href="#i-hand"/></svg>Arrastra la línea para comparar el mismo proceso antes y después.</p>
+    <div class="bawrap"><figure class="ba" id="ba" style="--p:50%"><img src="https://images.unsplash.com/photo-1556742521-9713bf272865?auto=format&fit=crop&w=1400&h=820&q=75" alt="Pago con el celular en un terminal sin contacto" onerror="this.style.visibility='hidden'"><div class="batop"><img src="https://images.unsplash.com/photo-1763730512449-f1a505f432a9?auto=format&fit=crop&w=1400&h=820&q=75" alt="Mano escribiendo en un cuaderno junto a una calculadora y efectivo" onerror="this.style.visibility='hidden'"></div><span class="lb l">Antes</span><span class="lb r">Después</span><span class="baline"></span><span class="knob" aria-hidden="true">⇆</span><input type="range" min="0" max="100" value="50" id="baR" aria-label="Deslizar para comparar antes y después de digitalizar el proceso de cobro"><a class="credit" href="https://unsplash.com/photos/leLj_06wjJQ" target="_blank" rel="noopener">Fotos: Unsplash</a></figure><div class="baside" id="baside"><p class="bahint"><svg class="i"><use href="#i-hand"/></svg>Arrastra la línea para comparar el mismo proceso antes y después.</p><div class="barow"><span class="bk">Registro</span><span class="bo">En papel</span><span class="bn">En el sistema</span></div><div class="barow"><span class="bk">Pago</span><span class="bo">Efectivo</span><span class="bn">Celular o tarjeta</span></div><div class="barow"><span class="bk">Información</span><span class="bo">Al cerrar el día</span><span class="bn">Al instante</span></div></div></div>
   </div>
 </section>
 
@@ -1361,7 +1378,7 @@ const askB=$('#askBtn');askB.addEventListener('click',()=>{const o=askB.getAttri
 })();
 
 /* ---------- Interactivo ---------- */
-(()=>{const ba=$('#ba'),r=$('#baR');const up=()=>ba.style.setProperty('--p',r.value+'%');r.addEventListener('input',up);up();
+(()=>{const ba=$('#ba'),r=$('#baR');const bs=$('#baside');const up=()=>{ba.style.setProperty('--p',r.value+'%');bs.classList.toggle('old',+r.value>50);bs.classList.toggle('new',+r.value<=50)};r.addEventListener('input',up);up();
  const HS={erp:['ERP','Registra la venta','Al confirmar el pedido, el ERP descuenta el inventario, emite la factura y actualiza la contabilidad.'],
   crm:['CRM','Conoce a la clienta','Guarda sus compras, mensajes y calificaciones para atenderla mejor y ofrecerle lo que le interesa.'],
   scm:['SCM','Mueve el producto','Coordina el inventario de cajas, el despacho y el seguimiento del envío hasta la entrega.']};
@@ -1376,6 +1393,7 @@ const askB=$('#askBtn');askB.addEventListener('click',()=>{const o=askB.getAttri
   $('#scTi').style.width=Math.max(2,t/mx*100)+'%';$('#scDi').style.width=Math.max(2,d/mx*100)+'%';
   $('#scTxt').textContent=d<t?'Con muchos clientes, el costo de la plataforma se reparte y atender a uno más casi no cuesta.':'Al inicio, el servicio digital es caro: la plataforma se paga con pocos clientes.'}
  $('#scR').addEventListener('input',sc2);sc2();
+ hs.querySelector('[data-hs="erp"]').click();
 })();
 })();
 </script>
